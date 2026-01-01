@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+		<html lang="ar" dir="rtl">
+		<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>إحصائية أفراد قبيلة آل خثيم</title>
+		<style>
+		  :root {
+		    --blue:#1565c0;
+		    --blue2:#0d47a1;
+		    --gold1:#f9a825;
+		    --gold2:#ffca28;
+		    --paper:#ffffff;
+		    --line:#e6e6e6;
+		    --dotted:#d9d9d9;
+		    --green:#1b8d3d;
+		    --greenbg:#e9f7ef;
+		    --greenbd:#bfe6cf;
+		  }
+		  * { box-sizing: border-box; }
+		  body {
+		    margin:0; padding:0;
+		    background: var(--paper);
+		    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+		    direction: rtl; text-align: right;
+		    color:#222; line-height: 1.9;
+		    -webkit-print-color-adjust: exact !important;
+		    print-color-adjust: exact !important;
+		  }
+		  .page { max-width: 920px; margin: 22px auto; padding: 18px 18px 24px; }
+		  .card {
+		    background:#fff; border:1px solid var(--line);
+		    border-radius:14px; overflow:hidden;
+		    box-shadow:0 6px 24px rgba(0,0,0,0.06);
+		  }
+		  .topbar {
+		    background: linear-gradient(120deg, var(--blue2), var(--blue));
+		    color:#fff; padding: 12px 16px;
+		    display:flex; justify-content:space-between; align-items:center;
+		    font-weight:800;
+		  }
+		  .topbar .sub { font-weight:500; opacity:.95; font-size:12px; }
+		  .head { padding: 16px 18px 6px; }
+		  .title {
+		    display:inline-block; margin:0;
+		    font-size:20px; font-weight:900;
+		    color: var(--blue2);
+		    position:relative; padding-bottom:10px;
+		  }
+		  .title:after {
+		    content:""; position:absolute; right:0; bottom:2px;
+		    height:3px; width:100%;
+		    border-radius:999px;
+		    background: linear-gradient(90deg, var(--gold1), var(--gold2));
+		  }
+		  .meta {
+		    margin-top:10px;
+		    display:flex; justify-content:space-between; align-items:center;
+		    gap:10px; flex-wrap:wrap;
+		  }
+		  .meta .pill {
+		    background:#fff8e1; border:1px solid #ffe082;
+		    padding:8px 10px; border-radius:10px; font-size:14px;
+		  }
+		  .meta .count { color: var(--blue); font-weight:900; font-size:15px; }
+		  .section { padding: 8px 18px 16px; }
+		  .note {
+		    background:#fff8e1; border:1px solid #ffe082;
+		    border-radius:12px; padding:10px 12px; font-size:14px;
+		  }
+		  .h2 {
+		    margin:14px 0 8px;
+		    font-size:15px; font-weight:900; color: var(--blue);
+		  }
+		  .line { font-size:15px; margin:6px 0; }
+		
+		  .substat {
+		    display:block;
+		    margin-top:8px;
+		    padding:8px 10px;
+		    border-radius:10px;
+		    background: var(--greenbg);
+		    border:1px solid var(--greenbd);
+		    font-weight:900;
+		    color: var(--green);
+		    font-size:14px;
+		  }
+		
+		  .dotted {
+		    border:0; border-top:2px dotted var(--dotted);
+		    margin: 12px 0;
+		  }
+		  .names-wrap { padding: 16px 18px 22px; }
+		  .names-title {
+		    font-size:19px; font-weight:900; color: var(--blue);
+		    margin:6px 0 10px;
+		  }
+		  .famhead{
+		    margin:14px 0 10px;
+		    padding:10px 12px;
+		    border-radius:12px;
+		    background:#e8f0fe;
+		    border:1px solid #d2e3fc;
+		    font-weight:900;
+		    color: var(--blue2);
+		    font-size:16px;
+		  }
+		  .person {
+		    display:flex; gap:10px; align-items:flex-start;
+		    background:#fafafa; border:1px solid #e8e8e8;
+		    border-radius:12px; padding:10px 12px; margin-bottom:8px;
+		  }
+		  .avatar {
+		    width:38px; height:38px; border-radius:50%;
+		    background: var(--blue); color:#fff;
+		    display:flex; justify-content:center; align-items:center;
+		    font-size:20px; flex:0 0 auto;
+		  }
+		  .ptext {
+		    font-size:15px; font-weight:650;
+		    color:#222; line-height:1.8;
+		  }
+		  .footer {
+		    padding:12px 18px 16px; border-top:1px solid #eee;
+		    font-size:14px; text-align:center;
+		    color: var(--blue); font-weight:900;
+		  }
+		
+		  /* ✅ كسر الصفحة: بدون فراغات أو صفحات فاضية */
+		  .print-break { height:0; margin:0; padding:0; }
+		
+		  @media print {
+		    .page { margin: 0; max-width:none; padding:0; }
+		    .card { box-shadow:none; border-radius:0; border:0; }
+		    .print-break { page-break-before: always; break-before: page; height:0; margin:0; padding:0; }
+		  }
+		</style>
+		</head>
+		<body>
+<noscript><div style="background:#ffebee;color:#b71c1c;padding:12px;margin:10px;border-radius:10px;font-weight:800;">⚠️ البحث يحتاج تفعيل JavaScript. افتح الملف في Safari أو أي متصفح (مو داخل معاينة الواتساب/الملفات).</div></noscript>
+		  <div class="page">
+		    <div class="card">
+		      <div class="topbar">
+		        <div>📊 تقرير القبيلة</div>
+		        <div class="sub">نظام إحصاء قبيلة آل خثيم</div>
+		      </div>
+		
+		      <div class="head">
+		        <h1 class="title">إحصائية أفراد قبيلة آل خثيم</h1>
+		        <div class="meta">
+		          <div class="pill">🗓️ الخميس ٢٠٢٦/١/١</div>
+		          <div class="count">👥 العدد الكلي: ٧٤١</div>
+		        </div>
+		      </div>
+		
+		      <div class="section">
+		        
+		
+		        <hr class="dotted">
+		
+		        <div class='h2'>👥 التوزيع حسب اللحمة:</div><div class='line'>آل محفوظ: ٢٩٠ | آل محمد: ٢٣٠ | آل غراب: ١٣٨ | آل نايي: ٨٣</div>
+		        <hr class='dotted'>
+		
+		        <div class='h2'>🏡 التوزيع حسب السكن:</div><div class='line'>آل مستور: ١٦ | ابها: ٦ | الجوف: ٢ | الخضراء: ٣ | الخميس: ١٨٠ | الدمام: ٤ | الدوادمي: ١ | الرياض: ١٠٦ | السليل: ١ | الشرقية: ٢٣ | الطايف: ٣٠ | العقيقة: ٧ | العلاية: ١ | المجاردة: ١٦ | المدانة: ٨٠ | المدينة: ٢٢ | النماص: ٨ | بيشة: ١ | تبوك: ٩ | تيما: ١ | جدة: ٩٥ | جيزان: ١٣ | حفر الباطن: ٥ | حلباء: ٥ | شرورة: ٢ | عازب: ٥ | غير محدد: ٦٤ | محايل: ٦ | مصر: ١ | مكة: ١٥ | نجران: ١٣<span class='substat'>🏙️ أكثر سكن: الخميس (١٨٠)</span><span class='substat'>🏚️ أقل سكن: العلاية (١)، مصر (١)، تيما (١)، الدوادمي (١)، السليل (١)، بيشة (١)</span></div>
+		        <hr class='dotted'>
+		
+		        <div class='h2'>💼 التوزيع حسب المهنة:</div><div class='line'>أعمال حرة: ٢ | باحث عن عمل: ١٢ | خريج تقنية: ١ | خريج ثانوي: ٢ | خريج جامعي: ٦ | دكتور: ١ | دكتور جامعة: ٢ | ضابط: ١٣ | ضابط متقاعد: ٤ | طالب بمعهد الدراسات: ١ | طالب جامعي: ٢٧ | طالب دراسات عليا: ١ | طالب روضة: ٢ | طالب مدرسة: ١٣٠ | طبيب: ٣ | طبيب أسنان: ١ | طفل: ٥٥ | عسكري: ٩٥ | عميد متقاعد: ٣ | غير محددة: ١٢٤ | قطاع خاص: ٣١ | لواء متقاعد: ١ | متسبب: ١ | متقاعد: ١٠٥ | محامي: ١ | مدير متقاعد: ١ | معلم: ٦١ | مهندس: ٩ | مهندس مستشار وضابط متقاعد: ١ | موظف: ١ | موظف بالتعليم: ١٠ | موظف بالتعليم العالي: ١ | موظف بالصحة: ١٠ | موظف مدني: ٢١ | مؤذن: ١ | وكيل مدرسة: ١</div>
+		      </div>
+		
+		      <div class="footer">✍️ أعد هذا التقرير / سالم يحيى بن يوسف</div>
+		    </div>
+		
+		    <!-- ✅ هنا كسر الصفحة الحقيقي (بدون صفحة فاضية) -->
+		    <div class="card print-break"></div>
+		
+		    <div class="card">
+		      <div class="topbar">
+		        <div>📁 البيانات والأسماء</div>
+		        <div class="sub">إحصائية أفراد قبيلة آل خثيم</div>
+		      </div>
+		
+		      <div class="names-wrap">
+		        <div class="names-title"></div>
+
+<!-- 🔍 شريط البحث -->
+<div class="search-bar" style="margin:12px 0; display:flex; gap:10px; flex-wrap:wrap;">
+  <input id="searchInput" placeholder="🔍 ابحث بالاسم أو السكن أو المهنة"
+    style="flex:1; min-width:220px; padding:12px; font-size:16px; border-radius:10px; border:1px solid #ccc;">
+  <button id="clearBtn"
+    style="padding:12px 16px; font-size:15px; border-radius:10px; border:none; background:#666; color:#fff; font-weight:800; cursor:pointer;">
+    مسح
+  </button>
+</div>
+
+		        <div class="note">🔴 تنبيه 🔴<br>ترتيب الأسماء مبني على تسلسل النسب حيث يوضع الإبن تحت والده والرمز 🔸 يشير لكبير العائلة .</div><hr class="dotted"><div class='famhead'>👥 اللحمة: آل محفوظ</div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١] 🔸يوسف بن كوفي — 🏡 الرياض — 💼 متقاعد — 📱 0530888811</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢] يحيى يوسف بن كوفي — 🏡 الرياض — 💼 مهندس مستشار وضابط متقاعد — 📱 0505481398</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣] علي يحيى يوسف بن كوفي — 🏡 الرياض — 💼 مهندس — 📱 0596666090</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤] ريان يحيى يوسف بن كوفي — 🏡 الرياض — 💼 قطاع خاص — 📱 0565791398</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥] فيصل يحيى يوسف بن كوفي — 🏡 جيزان — 💼 ضابط — 📱 0557471398</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦] ماجد يحيى يوسف بن كوفي — 🏡 الرياض — 💼 قطاع خاص — 📱 0539481398</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧] جمال يوسف بن كوفي — 🏡 الرياض — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٨] يوسف جمال يوسف بن كوفي — 🏡 الرياض — 💼 محامي — 📱 0580368962</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٩] بندر يوسف بن كوفي — 🏡 الشرقية — 💼 قطاع خاص — 📱 0554946666</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٠] طلال بندر يوسف بن كوفي — 🏡 الشرقية — 💼 طالب مدرسة — 📱 0554946666</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١١] تركي يوسف بن كوفي — 🏡 الرياض — 💼 موظف مدني — 📱 0547313131</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٢] خالد تركي يوسف بن كوفي — 🏡 الرياض — 💼 طفل — 📱 0547313131</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٣] عبدالسلام يوسف بن كوفي — 🏡 الرياض — 💼 قطاع خاص — 📱 0546100006</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٤] عبدالله يوسف بن كوفي — 🏡 الرياض — 💼 قطاع خاص — 📱 0566386320</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٥] محمد يوسف بن كوفي — 🏡 الرياض — 💼 موظف مدني — 📱 0549838237</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٦] يوسف خالد يوسف بن كوفي — 🏡 العلاية — 💼 طالب مدرسة — 📱 0534219503</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٧] محمد خالد يوسف بن كوفي — 🏡 مصر — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٨] اسامة خالد يوسف بن كوفي — 🏡 الرياض — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٩] سالم فاضل بن كوفي — 🏡 غير محدد — 💼 عميد متقاعد — 📱 0500001989</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٠] فاضل سالم فاضل بن كوفي — 🏡 الرياض — 💼 ضابط — 📱 0530753525</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢١] فاضل يوسف بن كوفي ( عبدالله ) — 🏡 الرياض — 💼 ضابط متقاعد — 📱 0505448994</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٢] عبدالله فاضل يوسف بن كوفي ( عبدالله ) — 🏡 الرياض — 💼 طبيب — 📱 0500611122</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٣] قيس عبدالله فاضل يوسف بن كوفي ( عبدالله ) — 🏡 الرياض — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٤] عادل فاضل يوسف بن كوفي ( عبدالله ) — 🏡 الرياض — 💼 مهندس — 📱 0559960654</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٥] يزن عادل فاضل يوسف بن كوفي ( عبدالله ) — 🏡 الرياض — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٦] حسام فاضل يوسف بن كوفي ( عبدالله ) — 🏡 الشرقية — 💼 مهندس — 📱 0555523504</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٧] فهد حسام فاضل يوسف بن كوفي ( عبدالله ) — 🏡 الشرقية — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٨] بدر فاضل يوسف بن كوفي ( عبدالله ) — 🏡 الرياض — 💼 طبيب — 📱 0551910121</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٩] 🔸يوسف بن يوسف — 🏡 الخميس — 💼 متقاعد — 📱 0503081702</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٠] يحيى يوسف بن يوسف — 🏡 نجران — 💼 موظف بالتعليم العالي — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣١] بسام يحيى يوسف بن يوسف — 🏡 محايل — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٢] رسيم يحيى يوسف بن يوسف — 🏡 محايل — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٣] عبدالله يوسف بن يوسف — 🏡 جيزان — 💼 عسكري — 📱 0564677876</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٤] يوسف عبدالله يوسف بن يوسف — 🏡 جيزان — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٥] نايف عبدالله يوسف بن يوسف — 🏡 جيزان — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٦] عامر يوسف بن يوسف — 🏡 الخميس — 💼 عسكري — 📱 0506077116</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٧] عبدالعزيز عامر يوسف بن يوسف — 🏡 الخميس — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٨] سالم يوسف بن يوسف — 🏡 شرورة — 💼 عسكري — 📱 0568844418</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٩] عامر بن يوسف — 🏡 المدانة — 💼 متقاعد — 📱 0550044458</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٠] عبدالله عامر بن يوسف — 🏡 المدانة — 💼 خريج جامعي — 📱 0550784681</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤١] عاصم عامر بن يوسف — 🏡 المدانة — 💼 خريج جامعي — 📱 0531040228</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٢] عصام عامر بن يوسف — 🏡 المدانة — 💼 طالب جامعي — 📱 0502150356</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٣] عبدالله بن يوسف — 🏡 الخميس — 💼 متقاعد — 📱 0554738223</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٤] عبدالكريم عبدالله بن يوسف — 🏡 الخميس — 💼 طالب جامعي — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٥] سالم بن يوسف — 🏡 النماص — 💼 موظف بالتعليم — 📱 0550044434</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٦] اياد سالم بن يوسف — 🏡 النماص — 💼 طالب مدرسة — 📱 0556315937</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٧] رائد سالم بن يوسف — 🏡 النماص — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٨] خالد سالم بن يوسف — 🏡 النماص — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٩] يوسف — 🏡 جدة — 💼 موظف بالصحة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٠] 🔸علي بن مطرق — 🏡 الخميس — 💼 متقاعد — 📱 0504747890</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥١] يحيى علي بن مطرق — 🏡 الخميس — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٢] عبدالاله علي بن مطرق — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٣] ريان علي بن مطرق — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٤] يحيى بن مطرق — 🏡 الخميس — 💼 متقاعد — 📱 0506737232</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٥] سيف يحيى بن مطرق — 🏡 غير محدد — 💼 ضابط — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٦] سالم يحيى بن مطرق — 🏡 الخميس — 💼 موظف بالصحة — 📱 0503771256</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٧] عبدالله بن مطرق — 🏡 الخميس — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٨] سالم عقيل بن مطرق — 🏡 الطايف — 💼 عميد متقاعد — 📱 0558541114</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٩] عقيل سالم عقيل بن مطرق — 🏡 جيزان — 💼 ضابط — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٠] اسامة سالم عقيل بن مطرق — 🏡 الطايف — 💼 طالب جامعي — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦١] معاذ عقيل سالم بن مطرق — 🏡 الطايف — 💼 ضابط — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٢] غرمان عقيل بن مطرق — 🏡 الخميس — 💼 متقاعد — 📱 0505780293</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٣] سلطان غرمان عقيل بن مطرق — 🏡 الخميس — 💼 خريج جامعي — 📱 0505780293</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٤] فيصل غرمان عقيل بن مطرق — 🏡 الخميس — 💼 عسكري — 📱 0505780293</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٥] علي عقيل بن مطرق — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٦] يحيى بن حيري ( بو شافع ) — 🏡 غير محدد — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٧] ضيف الله يحيى بن حيري ( بو شافع ) — 🏡 الشرقية — 💼 متقاعد — 📱 0507083119</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٨] خالد ضيف الله يحيى بن حيري ( بو شافع ) — 🏡 الرياض — 💼 قطاع خاص — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٩] ‏وليد ضيف الله يحيى بن حيري ( بو شافع ) — 🏡 الشرقية — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٠] علي يحيى بن حيري ( بو شافع ) — 🏡 الشرقية — 💼 عسكري — 📱 0504273317</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧١] فيصل علي يحيى بن حيري ( بو شافع ) — 🏡 الشرقية — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٢] ‏طارق علي يحيى بن حيري ( بو شافع ) — 🏡 الشرقية — 💼 موظف مدني — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٣] ‏بسام علي يحيى بن حيري ( بو شافع ) — 🏡 الشرقية — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٤] ‏متعب علي يحيى بن حيري ( بو شافع ) — 🏡 الشرقية — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٥] ‏فهد علي يحيى بن حيري ( بو شافع ) — 🏡 الشرقية — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٦] بندر يحيى بن حيري ( بو شافع ) — 🏡 تبوك — 💼 عسكري — 📱 0551238470</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٧] ريان بندر يحيى بن حيري ( بو شافع ) — 🏡 تبوك — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٨] ‏راكان بندر يحيى بن حيري ( بو شافع ) — 🏡 تبوك — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٩] محمد علي بن حيري — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٨٠] سالم علي بن حيري — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٨١] 🔸يوسف علي بن لسود — 🏡 جدة — 💼 متقاعد — 📱 0504606783</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٨٢] عبدالله علي بن لسود — 🏡 المدينة — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٨٣] علي عبدالله علي بن لسود — 🏡 المدينة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٨٤] عبدالرحمن عبدالله علي بن لسود — 🏡 الرياض — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٨٥] عبدالعزير عبدالله علي بن لسود — 🏡 المدينة — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٨٦] يوسف عبدالله علي بن لسود — 🏡 المدينة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٨٧] خالد عبدالله علي بن لسود — 🏡 المدينة — 💼 غير محددة — 📱 0566906507</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٨٨] يحيى علي بن لسود — 🏡 النماص — 💼 متقاعد — 📱 0555794485</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٨٩] نواف يحيى علي بن لسود — 🏡 النماص — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٩٠] فيصل يحيى علي بن لسود — 🏡 النماص — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٩١] محمد علي بن لسود — 🏡 عازب — 💼 متقاعد — 📱 0504157911</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٩٢] خالد محمد علي بن لسود — 🏡 نجران — 💼 عسكري — 📱 0553307182</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٩٣] فهد محمد علي بن لسود — 🏡 الخميس — 💼 عسكري — 📱 0532692459</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٩٤] وليد محمد علي بن لسود — 🏡 عازب — 💼 طالب جامعي — 📱 0535308871</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٩٥] حامد علي بن لسود — 🏡 الخميس — 💼 متقاعد — 📱 0504730433</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٩٦] عاصم حامد علي بن لسود — 🏡 الخميس — 💼 طالب جامعي — 📱 0570788507</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٩٧] يزيد حامد علي بن لسود — 🏡 الخميس — 💼 طالب مدرسة — 📱 0508499337</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٩٨] عبدالرحمن علي بن لسود — 🏡 الخميس — 💼 عسكري — 📱 0500158806</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٩٩] محمد عبدالرحمن علي بن لسود — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٠٠] علي عبدالرحمن علي بن لسود — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٠١] سفر علي بن لسود — 🏡 الخميس — 💼 عسكري — 📱 0553507639</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٠٢] علي عبدالله بن لسود — 🏡 الطايف — 💼 متقاعد — 📱 0568723478</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٠٣] ظافر علي عبدالله بن لسود — 🏡 الخميس — 💼 عسكري — 📱 0559610354</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٠٤] راكان ظافر علي عبدالله بن لسود — 🏡 الخميس — 💼 طالب مدرسة — 📱 0559610354</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٠٥] سلطان ظافر علي عبدالله بن لسود — 🏡 الخميس — 💼 طفل — 📱 0559610354</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٠٦] عبدالله علي عبدالله بن لسود — 🏡 الطايف — 💼 طالب جامعي — 📱 0540664935</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٠٧] محمد عبدالله بن لسود — 🏡 جدة — 💼 موظف مدني — 📱 0504851085</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٠٨] مشاري محمد عبدالله بن لسود — 🏡 جدة — 💼 خريج جامعي — 📱 0503790050</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٠٩] عبدالله محمد عبدالله بن لسود — 🏡 جدة — 💼 طالب جامعي — 📱 0543115722</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١١٠] الياس محمد عبدالله بن لسود — 🏡 جدة — 💼 طالب روضة — 📱 0504851085</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١١١] عبدالرحمن عبدالله بن لسود — 🏡 الطايف — 💼 عسكري — 📱 0555593366</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١١٢] عبدالله عبدالرحمن عبدالله بن لسود — 🏡 الطايف — 💼 طالب جامعي — 📱 0554499637</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١١٣] محمد عبدالرحمن عبدالله بن لسود — 🏡 الطايف — 💼 طالب مدرسة — 📱 0554499386</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١١٤] ريان عبدالرحمن عبدالله بن لسود — 🏡 الطايف — 💼 طالب مدرسة — 📱 0554499376</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١١٥] عمر عبدالرحمن عبدالله بن لسود — 🏡 الطايف — 💼 طالب مدرسة — 📱 0555593366</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١١٦] الوليد عبدالرحمن عبدالله بن لسود — 🏡 الطايف — 💼 طالب مدرسة — 📱 0555593366</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١١٧] عقيل عبدالله بن لسود — 🏡 الطايف — 💼 عسكري — 📱 0555570440</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١١٨] عبدالله عقيل عبدالله بن لسود — 🏡 الطايف — 💼 طالب روضة — 📱 0555570440</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١١٩] 🔸صالح حامد بن سعيدة — 🏡 الخميس — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٢٠] علي صالح حامد بن سعيدة — 🏡 حفر الباطن — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٢١] عبدالرحمن صالح حامد بن سعيدة — 🏡 الرياض — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٢٢] علي حامد بن سعيدة — 🏡 الخميس — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٢٣] حامد علي حامد بن سعيدة — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٢٤] محمد علي حامد بن سعيدة — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٢٥] أسامة علي حامد بن سعيدة — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٢٦] فرحان حامد بن سعيدة — 🏡 تبوك — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٢٧] عبدالله فرحان حامد بن سعيدة — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٢٨] عبدالرحمن فرحان حامد بن سعيدة — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٢٩] عبدالله حامد بن سعيدة — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٣٠] زياد عبدالله حامد بن سعيدة — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٣١] عماد عبدالله حامد بن سعيدة — 🏡 الخميس — 💼 غير محددة — 📱 0563508099</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٣٢] عبدالله صالح بن سعيدة — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٣٣] عبدالعزيز عبدالله صالح بن سعيدة — 🏡 الخميس — 💼 غير محددة — 📱 0547462033</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٣٤] فيصل عبدالله صالح بن سعيدة — 🏡 نجران — 💼 غير محددة — 📱 0535729997</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٣٥] محمد عبدالله صالح بن سعيدة — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٣٦] ظافر صالح بن سعيدة — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٣٧] مشعل ظافر صالح بن سعيدة — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٣٨] يزن ظافر صالح بن سعيدة — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٣٩] مازن ظافر صالح بن سعيدة — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٤٠] خلوفة صالح بن سعيدة — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٤١] صالح خلوفة صالح بن سعيدة — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٤٢] باسل خلوفة صالح بن سعيدة — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٤٣] حامد صالح محمد بن سعيدة — 🏡 عازب — 💼 موظف بالصحة — 📱 0561824445</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٤٤] فواز حامد صالح بن سعيدة — 🏡 الخميس — 💼 غير محددة — 📱 0553652040</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٤٥] مهند حامد صالح بن سعيدة — 🏡 عازب — 💼 غير محددة — 📱 0553658778</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٤٦] تميم حامد صالح بن سعيدة — 🏡 عازب — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٤٧] حامد علي بن سعيدة ( بو عسرى ) — 🏡 المدانة — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٤٨] محمد حامد علي بن سعيدة ( بو عسرى ) — 🏡 نجران — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٤٩] سعود حامد علي بن سعيدة ( بو عسرى ) — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٥٠] ماجد حامد علي بن سعيدة ( بو عسرى ) — 🏡 المدانة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٥١] محمد علي بن سعيدة ( بو عسرى ) — 🏡 نجران — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٥٢] عبدالرحمن محمد علي بن سعيدة ( بو عسرى ) — 🏡 الرياض — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٥٣] ماجد علي بن سعيدة ( بو عسرى ) — 🏡 نجران — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٥٤] تركي ماجد علي بن سعيدة ( بو عسرى ) — 🏡 نجران — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٥٥] 🔸يوسف بن صمان — 🏡 آل مستور — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٥٦] محمد يوسف بن صمان — 🏡 الشرقية — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٥٧] يوسف محمد يوسف بن صمان — 🏡 الشرقية — 💼 طالب جامعي — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٥٨] اياد محمد يوسف بن صمان — 🏡 الشرقية — 💼 طالب جامعي — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٥٩] شافي يوسف بن صمان — 🏡 آل مستور — 💼 موظف بالتعليم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٦٠] خالد شافي يوسف بن صمان — 🏡 الخميس — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٦١] وليد شافي يوسف بن صمان — 🏡 آل مستور — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٦٢] جودالله يوسف بن صمان — 🏡 الرياض — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٦٣] سلطان جودالله يوسف بن صمان — 🏡 الرياض — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٦٤] سعيد يوسف بن صمان — 🏡 آل مستور — 💼 موظف مدني — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٦٥] عبدالعزيز يوسف بن صمان — 🏡 آل مستور — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٦٦] يوسف عبدالعزيز يوسف بن صمان — 🏡 آل مستور — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٦٧] عبدالله عبدالعزيز يوسف بن صمان — 🏡 آل مستور — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٦٨] خالد يوسف بن صمان — 🏡 آل مستور — 💼 موظف مدني — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٦٩] علي يوسف بن صمان — 🏡 آل مستور — 💼 قطاع خاص — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٧٠] صالح علي بن صمان — 🏡 الخميس — 💼 عسكري — 📱 0504737466</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٧١] علي صالح علي بن صمان — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٧٢] محمد علي بن صمان — 🏡 الخميس — 💼 عسكري — 📱 0506759921</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٧٣] رياض محمد علي بن صمان — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٧٤] هيثم محمد علي بن صمان — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٧٥] جاد محمد علي بن صمان — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٧٦] عبدالرحمن علي بن صمان — 🏡 الخميس — 💼 عسكري — 📱 0558882617</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٧٧] عبدالله عبدالرحمن علي بن صمان — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٧٨] خالد عبدالرحمن علي بن صمان — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٧٩] سعيد بن صمان — 🏡 جدة — 💼 متقاعد — 📱 0503053840</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٨٠] محمد سعيد بن صمان — 🏡 جدة — 💼 باحث عن عمل — 📱 0548073976</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٨١] عبدالمجيد سعيد بن صمان — 🏡 جدة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٨٢] عبدالاله سعيد بن صمان — 🏡 الرياض — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٨٣] عمر عبدالاله سعيد بن صمان — 🏡 الرياض — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٨٤] صالح بن صمان — 🏡 آل مستور — 💼 متقاعد — 📱 0506715101</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٨٥] سعيد صالح بن صمان — 🏡 جيزان — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٨٦] عبدالعزيز صالح بن صمان — 🏡 جدة — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٨٧] عبدالودود صالح بن صمان — 🏡 آل مستور — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٨٨] جودالله بن صمان — 🏡 جدة — 💼 متقاعد — 📱 0540894049</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٨٩] معاذ جودالله بن صمان — 🏡 الرياض — 💼 عسكري — 📱 0541536000</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٩٠] محمد جودالله بن صمان — 🏡 جدة — 💼 خريج جامعي — 📱 0531424222</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٩١] فهد جودالله بن صمان — 🏡 جدة — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٩٢] عبدالله علي عبدالرحمن بن صمان — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٩٣] عبدالله علي بن صمان — 🏡 مكة — 💼 عسكري — 📱 0550385777</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٩٤] مسفر علي بن صمان — 🏡 الخميس — 💼 عسكري — 📱 0565739107</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٩٥] جودالله علي حامد بن صمان — 🏡 جدة — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٩٦] سعيد علي حامد بن صمان — 🏡 الرياض — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٩٧] فؤاد علي حامد بن صمان — 🏡 جدة — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٩٨] 🔸عبدالهادي بن معيش — 🏡 المدانة — 💼 متقاعد — 📱 0551116022</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[١٩٩] علي عبدالهادي بن معيش — 🏡 آل مستور — 💼 باحث عن عمل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٠٠] خالد عبدالهادي بن معيش — 🏡 آل مستور — 💼 باحث عن عمل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٠١] تركي عبدالهادي بن معيش — 🏡 آل مستور — 💼 باحث عن عمل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٠٢] محمد عبدالهادي بن معيش — 🏡 آل مستور — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٠٣] الياس عبدالهادي بن معيش — 🏡 آل مستور — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٠٤] محمد بن معيش — 🏡 الخميس — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٠٥] ريان محمد بن معيش — 🏡 الخميس — 💼 طالب جامعي — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٠٦] عبدالله محمد بن معيش — 🏡 الخميس — 💼 باحث عن عمل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٠٧] باتل محمد بن معيش — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٠٨] عبدالله بن معيش — 🏡 الشرقية — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٠٩] زياد عبدالله بن معيش — 🏡 الشرقية — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢١٠] عبدالرحمن بن معيش — 🏡 المجاردة — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢١١] عبدالعزيز عبدالرحمن بن معيش — 🏡 المجاردة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢١٢] عمر عبدالرحمن بن معيش — 🏡 المجاردة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢١٣] فهد عبدالرحمن بن معيش — 🏡 المجاردة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢١٤] فرحان بن معيش — 🏡 الخميس — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢١٥] علي فرحان بن معيش — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢١٦] عبدالله فرحان بن معيش — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢١٧] اسامة فرحان بن معيش — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢١٨] معاذ فرحان بن معيش — 🏡 الخميس — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢١٩] جمال بن معيش — 🏡 محايل — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٢٠] 🔸جودالله علي بن حامد — 🏡 جدة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٢١] سعيد علي بن حامد — 🏡 جدة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٢٢] فؤاد علي بن حامد — 🏡 جدة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٢٣] يوسف علي بن حامد — 🏡 جدة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٢٤] 🔸عبدالهادي مغرم بن صيدان — 🏡 جدة — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٢٥] محمد عبدالهادي مغرم بن صيدان — 🏡 جدة — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٢٦] تركي عبدالهادي مغرم بن صيدان — 🏡 جدة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٢٧] عبدالله عبدالهادي مغرم بن صيدان — 🏡 جدة — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٢٨] شاهر عبدالهادي مغرم بن صيدان — 🏡 جدة — 💼 موظف مدني — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٢٩] احمد عبدالهادي مغرم بن صيدان — 🏡 جدة — 💼 قطاع خاص — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٣٠] اسامة عبدالهادي مغرم بن صيدان — 🏡 جدة — 💼 مهندس — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٣١] حاتم عبدالهادي مغرم بن صيدان — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٣٢] حسن مغرم بن صيدان — 🏡 جدة — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٣٣] سلطان حسن مغرم بن صيدان — 🏡 جدة — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٣٤] علي حسن مغرم بن صيدان — 🏡 جدة — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٣٥] نايف حسن مغرم بن صيدان — 🏡 جدة — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٣٦] عايض حسن مغرم بن صيدان — 🏡 جدة — 💼 طبيب — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٣٧] خلوفة مغرم بن صيدان — 🏡 المدانة — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٣٨] فهد خلوفة مغرم بن صيدان — 🏡 الخميس — 💼 موظف بالصحة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٣٩] اياد فهد خلوفة مغرم بن صيدان — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٤٠] زياد فهد خلوفة مغرم بن صيدان — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٤١] مشرف خلوفة مغرم بن صيدان — 🏡 ابها — 💼 موظف بالصحة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٤٢] عزام مشرف خلوفة مغرم بن صيدان — 🏡 الخميس — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٤٣] وليد خلوفة مغرم بن صيدان — 🏡 جدة — 💼 دكتور جامعة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٤٤] بتال وليد خلوفة مغرم بن صيدان — 🏡 جدة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٤٥] عبدالله خلوفة مغرم بن صيدان — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٤٦] اصيل عبدالله خلوفة مغرم بن صيدان — 🏡 الخميس — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٤٧] محمد خلوفة مغرم بن صيدان — 🏡 الخميس — 💼 ضابط — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٤٨] عمار محمد خلوفة مغرم بن صيدان — 🏡 الخميس — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٤٩] عبدالعزيز خلوفة مغرم بن صيدان — 🏡 الخميس — 💼 قطاع خاص — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٥٠] بدر خلوفة مغرم بن صيدان — 🏡 الخميس — 💼 طالب جامعي — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٥١] حامد مغرم بن صيدان — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٥٢] خالد حامد مغرم بن صيدان — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٥٣] عبدالاله حامد مغرم بن صيدان — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٥٤] عمر حامد مغرم بن صيدان — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٥٥] علي مشرف مغرم بن صيدان — 🏡 الرياض — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٥٦] عبدالله مشرف مغرم بن صيدان — 🏡 الرياض — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٥٧] فيصل مشرف مغرم بن صيدان — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٥٨] خالد مشرف مغرم بن صيدان — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٥٩] عبدالهادي مشرف مغرم بن صيدان — 🏡 الرياض — 💼 قطاع خاص — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٦٠] عبدالله علي مغرم بن صيدان — 🏡 الطايف — 💼 متقاعد — 📱 0504714584</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٦١] محمد عبدالله علي مغرم بن صيدان — 🏡 جدة — 💼 موظف مدني — 📱 0554701333</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٦٢] عبدالله محمد عبدالله علي مغرم بن صيدان — 🏡 جدة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٦٣] علي عبدالله علي مغرم بن صيدان — 🏡 الطايف — 💼 عسكري — 📱 0532923991</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٦٤] مشاري عبدالله علي مغرم بن صيدان — 🏡 الطايف — 💼 عسكري — 📱 0504240112</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٦٥] نواف مشاري عبدالله علي مغرم بن صيدان — 🏡 الطايف — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٦٦] عبدالوهاب عبدالله علي مغرم بن صيدان — 🏡 الشرقية — 💼 موظف مدني — 📱 0505207485</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٦٧] متعب عبدالله علي مغرم بن صيدان — 🏡 الطايف — 💼 موظف مدني — 📱 0561015707</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٦٨] حسن عبدالله علي مغرم بن صيدان — 🏡 الطايف — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٦٩] محمد علي مغرم بن صيدان — 🏡 الخميس — 💼 متقاعد — 📱 0546938848</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٧٠] علي محمد علي مغرم بن صيدان — 🏡 الخميس — 💼 عسكري — 📱 0530643002</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٧١] عبدالله محمد علي مغرم بن صيدان — 🏡 الخميس — 💼 باحث عن عمل — 📱 0533829907</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٧٢] محمد عبدالله مغرم بن صيدان — 🏡 الرياض — 💼 متقاعد — 📱 0555441350</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٧٣] مشعل محمد عبدالله مغرم بن صيدان — 🏡 الرياض — 💼 عسكري — 📱 0551100061</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٧٤] علي عبدالله مغرم بن صيدان — 🏡 الخميس — 💼 متقاعد — 📱 0505753287</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٧٥] سالم صالح بن لخصى — 🏡 جدة — 💼 متقاعد — 📱 0505715581</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٧٦] سعيد سالم صالح بن لخصى — 🏡 جدة — 💼 عسكري — 📱 0558245250</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٧٧] سليمان سالم صالح بن لخصى — 🏡 جدة — 💼 عسكري — 📱 0533559578</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٧٨] سامي سالم صالح بن لخصى — 🏡 جدة — 💼 عسكري — 📱 0507208432</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٧٩] مفرح صالح بن لخصى — 🏡 جدة — 💼 معلم — 📱 0505580954</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٨٠] سالم مفرح صالح بن لخصى — 🏡 شرورة — 💼 عسكري — 📱 0500441131</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٨١] عبدالله مفرح صالح بن لخصى — 🏡 جدة — 💼 عسكري — 📱 0553442715</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٨٢] سعيد فاضل صالح بن لخصى — 🏡 الرياض — 💼 متقاعد — 📱 0503206658</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٨٣] يوسف سعيد فاضل صالح بن لخصى — 🏡 الرياض — 💼 قطاع خاص — 📱 0504250072</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٨٤] علي سعيد فاضل صالح بن لخصى — 🏡 الرياض — 💼 قطاع خاص — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٨٥] فاضل سعيد فاضل صالح بن لخصى — 🏡 الرياض — 💼 قطاع خاص — 📱 0500660667</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٨٦] فؤاد سعيد فاضل صالح بن لخصى — 🏡 الرياض — 💼 قطاع خاص — 📱 0550080588</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٨٧] سعيد سليمان صالح بن لخصى — 🏡 العقيقة — 💼 متقاعد — 📱 0506203452</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٨٨] عبدالله سعيد سليمان صالح بن لخصى — 🏡 العقيقة — 💼 متسبب — 📱 0533410063</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٨٩] عبدالله سليمان صالح بن لخصى — 🏡 الرياض — 💼 متقاعد — 📱 0504484752</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٩٠] سليمان عبدالله سليمان صالح بن لخصى — 🏡 الرياض — 💼 قطاع خاص — 📱 0504484758</div></div>
+<div class='famhead'>👥 اللحمة: آل محمد</div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٩١] 🔸عبدالرحمن بن عسلة — 🏡 المدينة — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٩٢] يوسف عبدالرحمن بن عسلة — 🏡 المدينة — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٩٣] عبدالرحمن يوسف عبدالرحمن بن عسلة — 🏡 المدينة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٩٤] محمد عبدالرحمن بن عسلة — 🏡 المدينة — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٩٥] فيصل محمد عبدالرحمن بن عسلة — 🏡 المدينة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٩٦] نايف محمد عبدالرحمن بن عسلة — 🏡 المدينة — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٩٧] حامد عبدالرحمن بن عسلة — 🏡 المدينة — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٩٨] عبدالله عبدالرحمن بن عسلة — 🏡 المدينة — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٢٩٩] فهد عبدالرحمن بن عسلة — 🏡 المدينة — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٠٠] طلال فهد عبدالرحمن بن عسلة — 🏡 المدينة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٠١] علي بن عسلة — 🏡 المدينة — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٠٢] محمد علي بن عسلة — 🏡 المدينة — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٠٣] عبدالرحمن محمد بن عسلة — 🏡 الخميس — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٠٤] محمد عبدالرحمن محمد بن عسلة — 🏡 الخميس — 💼 طالب دراسات عليا — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٠٥] مشعل عبدالرحمن محمد بن عسلة — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٠٦] علي محمد بن عسلة — 🏡 المجاردة — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٠٧] محمد علي محمد بن عسلة — 🏡 المجاردة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٠٨] معاذ علي محمد بن عسلة — 🏡 المجاردة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٠٩] عبدالله محمد بن عسلة — 🏡 الخميس — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣١٠] عمر عبدالله محمد بن عسلة — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣١١] نايف عبدالله محمد بن عسلة — 🏡 الخميس — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣١٢] صالح محمد بن عسلة — 🏡 العقيقة — 💼 موظف بالصحة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣١٣] هيثم صالح محمد بن عسلة — 🏡 العقيقة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣١٤] سلطان محمد بن عسلة — 🏡 جيزان — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣١٥] رعد سلطان محمد بن عسلة — 🏡 جيزان — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣١٦] خالد محمد بن عسلة — 🏡 المدانة — 💼 أعمال حرة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣١٧] احمد محمد بن عسلة — 🏡 المدانة — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣١٨] 🔸يحيى عامر بن يحيى — 🏡 المدانة — 💼 متقاعد — 📱 0505763885</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣١٩] مشبب يحيى عامر بن يحيى — 🏡 الرياض — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٢٠] عبدالعزيز يحيى عامر بن يحيى — 🏡 الجوف — 💼 ضابط — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٢١] يحيى عبدالعزيز يحيى عامر بن يحيى — 🏡 الجوف — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٢٢] سعيد يحيى عامر بن يحيى — 🏡 نجران — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٢٣] عامر سالم بن يحيى — 🏡 الخميس — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٢٤] سالم عامر سالم بن يحيى — 🏡 الخميس — 💼 قطاع خاص — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٢٥] حسن عامر سالم بن يحيى — 🏡 الخميس — 💼 قطاع خاص — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٢٦] حسام عامر سالم بن يحيى — 🏡 الخميس — 💼 باحث عن عمل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٢٧] الياس عامر سالم بن يحيى — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٢٨] عبدالله سالم بن يحيى — 🏡 الشرقية — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٢٩] تركي عبدالله سالم بن يحيى — 🏡 الدمام — 💼 طالب جامعي — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٣٠] راكان عبدالله سالم بن يحيى — 🏡 الدمام — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٣١] مشاري عبدالله سالم بن يحيى — 🏡 الدمام — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٣٢] محمد سالم بن يحيى — 🏡 جدة — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٣٣] عبدالرحمن محمد سالم بن يحيى — 🏡 جدة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٣٤] عبدالسلام محمد سالم بن يحيى — 🏡 جدة — 💼 طالب جامعي — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٣٥] يوسف سالم بن يحيى — 🏡 جدة — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٣٦] عاصم يوسف سالم بن يحيى — 🏡 جدة — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٣٧] عصام يوسف سالم بن يحيى — 🏡 الدمام — 💼 قطاع خاص — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٣٨] اياد يوسف سالم بن يحيى — 🏡 جدة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٣٩] فراس يوسف سالم بن يحيى — 🏡 جدة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٤٠] سعيد سالم بن يحيى — 🏡 الخضراء — 💼 معلم — 📱 0509033035</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٤١] فيصل سعيد سالم بن يحيى — 🏡 الخضراء — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٤٢] سعود سعيد سالم بن يحيى — 🏡 الخضراء — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٤٣] ظاهر سالم بن يحيى — 🏡 الشرقية — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٤٤] فيصل سالم بن يحيى — 🏡 جدة — 💼 معلم — 📱 0555001999</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٤٥] مشرف سالم بن يحيى — 🏡 حلباء — 💼 معلم — 📱 0566690110</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٤٦] مشاري مشرف سالم بن يحيى — 🏡 النماص — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٤٧] عبدالعزيز سالم بن يحيى — 🏡 جدة — 💼 قطاع خاص — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٤٨] باسل يحيى سالم بن يحيى — 🏡 الرياض — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٤٩] سالم يحيى سالم بن يحيى — 🏡 الرياض — 💼 قطاع خاص — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٥٠] سالم عبدالله بن يحيى (بلغيث) — 🏡 الخميس — 💼 متقاعد — 📱 0555760479</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٥١] عبدالله سالم عبدالله بن يحيى (بلغيث) — 🏡 الخميس — 💼 قطاع خاص — 📱 0504581064</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٥٢] عامر عبدالله بن يحيى ( بلغيث) — 🏡 الخميس — 💼 عسكري — 📱 0503755188</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٥٣] فراس عامر عبدالله بن يحيى (بلغيث) — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٥٤] فهد عبدالله بن يحيى (بلغيث) — 🏡 محايل — 💼 معلم — 📱 0500029488</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٥٥] جسار فهد عبدالله بن يحيى (بلغيث) — 🏡 محايل — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٥٦] 🔸سالم علي بن درويش — 🏡 المدينة — 💼 متقاعد — 📱 0506302374</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٥٧] عبدالاله سالم علي بن درويش — 🏡 المدينة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٥٨] علي سالم علي بن درويش — 🏡 المدينة — 💼 معلم — 📱 0552922353</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٥٩] عبدالملك علي سالم علي بن درويش — 🏡 المدينة — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٦٠] عبدالسلام سالم علي بن درويش — 🏡 الرياض — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٦١] عبدالمحسن سالم علي بن درويش — 🏡 تيما — 💼 عسكري — 📱 0541151063</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٦٢] عبدالوهاب سالم علي بن درويش — 🏡 جيزان — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٦٣] أيمن سالم علي بن درويش — 🏡 المدينة — 💼 غير محددة — 📱 0538638431</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٦٤] علي عبدالله بن درويش — 🏡 المدانة — 💼 متقاعد — 📱 0500641990</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٦٥] عبدالهادي علي عبدالله بن درويش — 🏡 المدانة — 💼 قطاع خاص — 📱 0503613083</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٦٦] عمر علي عبدالله بن درويش — 🏡 المدانة — 💼 قطاع خاص — 📱 0537845547</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٦٧] عبدالرحمن علي عبدالله بن درويش — 🏡 المدانة — 💼 طالب جامعي — 📱 0530561726</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٦٨] عبدالله علي عبدالله بن درويش — 🏡 المدانة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٦٩] عبدالهادي عبدالله بن درويش — 🏡 تبوك — 💼 متقاعد — 📱 0504567291</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٧٠] بدر عبدالهادي عبدالله بن درويش — 🏡 الدوادمي — 💼 ضابط — 📱 0537722916</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٧١] عبدالله عبدالهادي عبدالله بن درويش — 🏡 تبوك — 💼 طالب جامعي — 📱 0537260717</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٧٢] باسم عبدالهادي عبدالله بن درويش — 🏡 تبوك — 💼 طالب مدرسة — 📱 0500884083</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٧٣] سالم عبدالله بن درويش — 🏡 حفر الباطن — 💼 عسكري — 📱 0555015916</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٧٤] ريان سالم عبدالله بن درويش — 🏡 حفر الباطن — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٧٥] عبدالله سالم بن درويش — 🏡 المدانة — 💼 متقاعد — 📱 0556522920</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٧٦] سالم عبدالله سالم بن درويش — 🏡 الخميس — 💼 معلم — 📱 0552817025</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٧٧] عبدالله سالم عبدالله سالم بن درويش — 🏡 المدانة — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٧٨] الياس سالم عبدالله بن درويش — 🏡 حفر الباطن — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٧٩] يامن سالم عبدالله بن درويش — 🏡 حفر الباطن — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٨٠] محمد عبدالله سالم بن درويش — 🏡 الشرقية — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٨١] عبدالرحمن عبدالله سالم بن درويش — 🏡 الرياض — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٨٢] احمد عبدالله سالم بن درويش — 🏡 المدانة — 💼 طالب جامعي — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٨٣] علي عبدالله سالم بن درويش — 🏡 المدانة — 💼 طالب جامعي — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٨٤] عبدالعزيز عبدالله سالم  بن درويش — 🏡 المدانة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٨٥] 🔸عبدالله محمد بن محي — 🏡 الرياض — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٨٦] محي محمد بن محي — 🏡 محايل — 💼 معلم — 📱 0505762147</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٨٧] حاتم محي محمد بن محي — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٨٨] ناصر محمد بن محي — 🏡 المجاردة — 💼 ضابط — 📱 0501044477</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٨٩] علي محمد بن محي — 🏡 جدة — 💼 غير محددة — 📱 0548386224</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٩٠] تميم علي محمد بن محي — 🏡 جدة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٩١] فراس خالد محمد بن محي — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٩٢] أوس خالد محمد بن محي — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٩٣] إياد خالد محمد بن محي — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٩٤] عبدالرحمن عبدالله بن محي — 🏡 مكة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٩٥] مهدي عبدالله بن محي — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٩٦] راشد عبدالله بن محي — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٩٧] عبدالعزيز عبدالله بن محي — 🏡 غير محدد — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٩٨] 🔸صالح محمد بن صالح ( بو شامتة ) — 🏡 مكة — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٣٩٩] محمد صالح محمد بن صالح ( بو شامتة ) — 🏡 جدة — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٠٠] ‏صالح محمد صالح محمد بن صالح ( بو شامتة ) — 🏡 جدة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٠١] ‏زياد محمد صالح محمد بن صالح ( بو شامتة ) — 🏡 جدة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٠٢] ‏اياد محمد صالح محمد بن صالح ( بو شامتة ) — 🏡 جدة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٠٣] صلاح صالح محمد بن صالح ( بو شامتة ) — 🏡 مكة — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٠٤] مهدي محمد بن صالح ( بو شامتة ) — 🏡 جدة — 💼 متقاعد — 📱 0555666042</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٠٥] صالح مهدي محمد بن صالح ( بو شامتة ) — 🏡 جدة — 💼 قطاع خاص — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٠٦] ‏بدر صالح مهدي محمد بن صالح ( بو شامتة ) — 🏡 جدة — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٠٧] علي مهدي محمد بن صالح ( بو شامتة ) — 🏡 جدة — 💼 موظف بالصحة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٠٨] ‏محمد مهدي محمد بن صالح ( بو شامتة ) — 🏡 جدة — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٠٩] علي محمد بن صالح ( بو شامتة ) — 🏡 مكة — 💼 متقاعد — 📱 0503777158</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤١٠] مهدي علي محمد بن صالح ( بو شامتة ) — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤١١] مساعد محمد بن صالح ( بو شامتة ) — 🏡 مكة — 💼 متقاعد — 📱 0552862022</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤١٢] أنس مساعد محمد بن صالح ( بو شامتة ) — 🏡 مكة — 💼 عسكري — 📱 0504134419</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤١٣] ابراهيم مساعد محمد بن صالح ( بو شامتة ) — 🏡 مكة — 💼 قطاع خاص — 📱 0534435807</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤١٤] عبدالله مهدي بن صالح — 🏡 المدانة — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤١٥] محمد مهدي بن صالح — 🏡 المدانة — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤١٦] عبدالله محمد مهدي بن صالح — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤١٧] حامد مهدي بن صالح — 🏡 المجاردة — 💼 معلم — 📱 0503089972</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤١٨] 🔸محمد جابر بن ثير — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤١٩] علي جابر بن ثير — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٢٠] حسن جابر بن ثير — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٢١] مفرح جابر بن ثير — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٢٢] جابر محمد بن ثير — 🏡 المدانة — 💼 معلم — 📱 0505762918</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٢٣] محمد جابر محمد بن ثير — 🏡 الرياض — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٢٤] تركي جابر محمد بن ثير — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٢٥] معاذ جابر محمد بن ثير — 🏡 غير محدد — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٢٦] زياد جابر محمد بن ثير — 🏡 المدانة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٢٧] علي محمد بن ثير — 🏡 المدانة — 💼 معلم — 📱 0557441100</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٢٨] يزن علي محمد بن ثير — 🏡 المدانة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٢٩] 🔸محمد بن حمدان — 🏡 المدانة — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٣٠] عبدالعزيز محمد بن حمدان — 🏡 المجاردة — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٣١] يحي محمد بن حمدان — 🏡 غير محدد — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٣٢] يوسف محمد بن حمدان — 🏡 غير محدد — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٣٣] عبدالعزيز بن حمدان — 🏡 جدة — 💼 متقاعد — 📱 0557279773</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٣٤] محمد عبدالعزيز بن حمدان — 🏡 جدة — 💼 عسكري — 📱 0566062111</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٣٥] عبدالعزيز محمد عبدالعزيز بن حمدان — 🏡 جدة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٣٦] سعيد محمد عبدالعزيز بن حمدان — 🏡 جدة — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٣٧] البراء محمد عبدالعزيز بن حمدان — 🏡 جدة — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٣٨] انس عبدالعزيز بن حمدان — 🏡 جدة — 💼 موظف مدني — 📱 0599696872</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٣٩] 🔸عبدالرحمن حامد بن لعيم — 🏡 المدانة — 💼 متقاعد — 📱 0503749628</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٤٠] حامد عبدالرحمن حامد بن لعيم — 🏡 غير محدد — 💼 موظف بالتعليم — 📱 0536664554</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٤١] علي عبدالرحمن حامد بن لعيم — 🏡 المدانة — 💼 باحث عن عمل — 📱 0506656210</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٤٢] خالد عبدالرحمن حامد بن لعيم — 🏡 المدانة — 💼 باحث عن عمل — 📱 0534187718</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٤٣] 🔸سفر بن  صالح — 🏡 المدانة — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٤٤] صالح سفر بن  صالح — 🏡 غير محدد — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٤٥] علي سفر بن  صالح — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٤٦] حامد سفر بن  صالح — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٤٧] عبدالكريم سفر بن  صالح — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٤٨] 🔸علي بو سعيد — 🏡 الرياض — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٤٩] سعيد بو سعيد — 🏡 الرياض — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٥٠] عبدالله بو سعيد — 🏡 المدانة — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٥١] محمد عبدالله بو سعيد — 🏡 غير محدد — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٥٢] مغرم محمد بو سعيد — 🏡 العقيقة — 💼 موظف بالتعليم — 📱 0540811012</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٥٣] علي محمد بو سعيد — 🏡 الخميس — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٥٤] سعيد محمد بو سعيد — 🏡 الخميس — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٥٥] فارس محمد بو سعيد — 🏡 العقيقة — 💼 موظف بالتعليم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٥٦] 🔸مغرم بو علامة — 🏡 الرياض — 💼 متقاعد — 📱 0555224541</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٥٧] عبدالرحمن مغرم بو علامة — 🏡 الرياض — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٥٨] أسامة مغرم بو علامة — 🏡 الرياض — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٥٩] 🔸حامد بن مشرف — 🏡 المدانة — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٦٠] هزاع حامد بن مشرف — 🏡 حلباء — 💼 موظف بالتعليم — 📱 0506084693</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٦١] حامد هزاع حامد بن مشرف — 🏡 حلباء — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٦٢] عبدالرحمن هزاع حامد بن مشرف — 🏡 حلباء — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٦٣] عبدالعزيز هزاع حامد بن مشرف — 🏡 حلباء — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٦٤] عبدالله حامد بن مشرف — 🏡 المجاردة — 💼 موظف بالتعليم — 📱 0568996676</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٦٥] خالد عبدالله حامد بن مشرف — 🏡 المجاردة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٦٦] فيصل عبدالله حامد بن مشرف — 🏡 المجاردة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٦٧] غرمان حامد بن مشرف — 🏡 الخميس — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٦٨] ريان غرمان حامد بن مشرف — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٦٩] هتان غرمان حامد بن مشرف — 🏡 الخميس — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٧٠] ظافر حامد بن مشرف — 🏡 الخميس — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٧١] وسام ظافر حامد بن مشرف — 🏡 الخميس — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٧٢] بسام ظافر حامد بن مشرف — 🏡 الخميس — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٧٣] مشرف حامد بن مشرف — 🏡 المدانة — 💼 موظف مدني — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٧٤] رافع حامد بن مشرف — 🏡 الخميس — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٧٥] هزاع بن مشرف — 🏡 الرياض — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٧٦] حامد هزاع بن مشرف — 🏡 الرياض — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٧٧] بتال حامد هزاع بن مشرف — 🏡 الرياض — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٧٨] هزاع حامد هزاع بن مشرف — 🏡 الرياض — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٧٩] باسل حامد هزاع بن مشرف — 🏡 الرياض — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٨٠] تركي هزاع بن مشرف — 🏡 الرياض — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٨١] هزاع تركي هزاع بن مشرف — 🏡 الرياض — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٨٢] مشرف هزاع بن مشرف — 🏡 الرياض — 💼 خريج ثانوي — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٨٣] عبدالله بن مشرف — 🏡 المدانة — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٨٤] مشرف عبدالله بن مشرف — 🏡 السليل — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٨٥] عبدالله مشرف عبدالله بن مشرف — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٨٦] سالم عبدالله بن مشرف — 🏡 الخميس — 💼 موظف مدني — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٨٧] وليد سالم عبدالله بن مشرف — 🏡 الخميس — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٨٨] خالد عبدالله بن مشرف — 🏡 الخميس — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٨٩] ظافر عبدالله بن مشرف — 🏡 المدانة — 💼 خريج تقنية — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٩٠] 🔸علي بن نوح — 🏡 جدة — 💼 متقاعد — 📱 0565566406</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٩١] عبدالله علي بن نوح — 🏡 جدة — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٩٢] سعد علي بن نوح — 🏡 جدة — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٩٣] محمد علي بن نوح — 🏡 الرياض — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٩٤] عبدالله بن نوح — 🏡 العقيقة — 💼 متقاعد — 📱 0504408218</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٩٥] غرمان عبدالله بن نوح — 🏡 الرياض — 💼 ضابط متقاعد — 📱 0500019696</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٩٦] عبدالله غرمان عبدالله بن نوح — 🏡 الرياض — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٩٧] فيصل غرمان عبدالله بن نوح — 🏡 الرياض — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٩٨] محمد غرمان عبدالله بن نوح — 🏡 الرياض — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٤٩٩] عمر غرمان عبدالله بن نوح — 🏡 الرياض — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٠٠] نوح عبدالله بن نوح — 🏡 الرياض — 💼 متقاعد — 📱 0554049999</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٠١] عبدالله نوح عبدالله بن نوح — 🏡 الرياض — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٠٢] طلال نوح عبدالله بن نوح — 🏡 الرياض — 💼 ضابط — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٠٣] صقر نوح عبدالله بن نوح — 🏡 الرياض — 💼 موظف مدني — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٠٤] عزام نوح عبدالله بن نوح — 🏡 الرياض — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٠٥] يحيى عبدالله بن نوح — 🏡 الرياض — 💼 موظف مدني — 📱 0554669993</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٠٦] عبدالله يحيى عبدالله بن نوح — 🏡 الرياض — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٠٧] نواف يحيى عبدالله بن نوح — 🏡 الرياض — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٠٨] نايف يحيى عبدالله بن نوح — 🏡 الرياض — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٠٩] نوح يحيى عبدالله بن نوح — 🏡 الرياض — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥١٠] سلمان يحيى عبدالله بن نوح — 🏡 الرياض — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥١١] نايف عبدالله بن نوح — 🏡 الرياض — 💼 موظف مدني — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥١٢] سعود نايف عبدالله بن نوح — 🏡 الرياض — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥١٣] محمد نايف عبدالله بن نوح — 🏡 الرياض — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥١٤] احمد نايف عبدالله بن نوح — 🏡 الرياض — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥١٥] عبدالعزيز نايف عبدالله بن نوح — 🏡 الرياض — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥١٦] نواف عبدالله بن نوح — 🏡 الرياض — 💼 موظف مدني — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥١٧] هشام عبدالله بن نوح — 🏡 الرياض — 💼 موظف مدني — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥١٨] هيثم عبدالله بن نوح — 🏡 الرياض — 💼 ضابط — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥١٩] هاني عبدالله بن نوح — 🏡 الرياض — 💼 موظف مدني — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٢٠] يحيى بن نوح — 🏡 الرياض — 💼 متقاعد — 📱 0555251184</div></div>
+<div class='famhead'>👥 اللحمة: آل غراب</div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٢١] 🔸محمد بن سعيد — 🏡 الخميس — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٢٢] سعيد محمد بن سعيد — 🏡 غير محدد — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٢٣] علي محمد بن سعيد — 🏡 مكة — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٢٤] عبدالله علي محمد بن سعيد — 🏡 المدانة — 💼 أعمال حرة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٢٥] عبدالله محمد بن سعيد — 🏡 الخميس — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٢٦] حامد محمد بن سعيد — 🏡 المدانة — 💼 موظف بالتعليم — 📱 0502866966</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٢٧] 🔸صالح بن رداد — 🏡 جدة — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٢٨] علي صالح بن رداد — 🏡 جدة — 💼 لواء متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٢٩] عبدالله صالح بن رداد — 🏡 جدة — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٣٠] صالح عبدالله صالح بن رداد — 🏡 الرياض — 💼 ضابط — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٣١] محمد عبدالله صالح بن رداد — 🏡 جدة — 💼 قطاع خاص — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٣٢] يوسف صالح بن رداد — 🏡 الطايف — 💼 مدير متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٣٣] علي يوسف صالح بن رداد — 🏡 الطايف — 💼 مهندس — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٣٤] نواف يوسف صالح بن رداد — 🏡 الطايف — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٣٥] تميم يوسف صالح بن رداد — 🏡 الطايف — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٣٦] محمد صالح بن رداد — 🏡 جدة — 💼 وكيل مدرسة — 📱 0505642496</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٣٧] حسام محمد صالح بن رداد — 🏡 جدة — 💼 مهندس — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٣٨] سعود محمد صالح بن رداد — 🏡 جدة — 💼 طالب جامعي — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٣٩] خالد صالح بن رداد — 🏡 جيزان — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٤٠] يزيد خالد صالح بن رداد — 🏡 جيزان — 💼 طالب جامعي — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٤١] رداد خالد صالح بن رداد — 🏡 المدانة — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٤٢] عبدالعزيز صالح بن رداد — 🏡 جدة — 💼 قطاع خاص — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٤٣] سعود عبدالعزيز صالح بن رداد — 🏡 جدة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٤٤] عايض صالح بن رداد — 🏡 الرياض — 💼 مهندس — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٤٥] نايف عايض صالح بن رداد — 🏡 الرياض — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٤٦] عبدالعزيز سعيد صالح بن رداد — 🏡 جدة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٤٧] محمد سعيد صالح بن رداد — 🏡 جدة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٤٨] سالم عبدالله بن رداد — 🏡 المجاردة — 💼 معلم — 📱 0551799989</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٤٩] عبدالله سالم عبدالله بن رداد — 🏡 ابها — 💼 طالب جامعي — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٥٠] صالح عبدالله بن رداد — 🏡 ابها — 💼 موظف بالصحة — 📱 0555761512</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٥١] عبدالله صالح عبدالله بن رداد — 🏡 ابها — 💼 خريج جامعي — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٥٢] رداد صالح عبدالله بن رداد — 🏡 الشرقية — 💼 طالب بمعهد الدراسات — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٥٣] محمد صالح عبدالله بن رداد — 🏡 ابها — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٥٤] محمد عبدالله بن رداد — 🏡 جدة — 💼 موظف بالصحة — 📱 0555762969</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٥٥] ريان محمد عبدالله بن رداد — 🏡 جدة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٥٦] عامر عبدالله بن رداد — 🏡 ابها — 💼 طبيب أسنان — 📱 0545755572</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٥٧] 🔸سليمان بن حسن — 🏡 المدانة — 💼 متقاعد — 📱 0533339377</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٥٨] محمد سليمان بن حسن — 🏡 المدانة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٥٩] رياض سليمان بن حسن — 🏡 المدانة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٦٠] حسن بن حسن — 🏡 الطايف — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٦١] حسام حسن بن حسن — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٦٢] 🔸محمد بن رافع — 🏡 المدانة — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٦٣] رافع محمد بن رافع — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٦٤] 🔸عبدالله بن عواض — 🏡 الخميس — 💼 متقاعد — 📱 0503799102</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٦٥] محمد عبدالله بن عواض — 🏡 مكة — 💼 موظف بالتعليم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٦٦] عبدالله محمد عبدالله بن عواض — 🏡 مكة — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٦٧] نوح عبدالله بن عواض — 🏡 الخميس — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٦٨] يحيى عبدالله بن عواض — 🏡 الخميس — 💼 قطاع خاص — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٦٩] عبدالاله عبدالله بن عواض — 🏡 الخميس — 💼 قطاع خاص — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٧٠] عواض بن عواض — 🏡 الطايف — 💼 عسكري — 📱 0533385940</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٧١] ‏فارس عواض بن عواض — 🏡 الطايف — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٧٢] ‏تركي عواض بن عواض — 🏡 الطايف — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٧٣] 🔸خلوفة بن حسحوس — 🏡 جدة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٧٤] عبدالله خلوفة بن حسحوس — 🏡 غير محدد — 💼 ضابط متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٧٥] عبدالله بن حسحوس — 🏡 جدة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٧٦] مطلق عبدالله بن حسحوس — 🏡 جدة — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٧٧] محمد عبدالله بن حسحوس — 🏡 جدة — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٧٨] ابراهيم  عبدالله بن حسحوس — 🏡 جدة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٧٩] حسن بن حسحوس — 🏡 مكة — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٨٠] عبدالمجيد حسن بن حسحوس — 🏡 مكة — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٨١] عبدالله حسن بن حسحوس — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٨٢] سالم بن حسحوس — 🏡 الخميس — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٨٣] عبدالله سالم بن حسحوس — 🏡 جدة — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٨٤] عبدالله مطلق بن حسحوس — 🏡 مكة — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٨٥] عبالسلام مطلق بن حسحوس — 🏡 مكة — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٨٦] 🔸عبدالله بو شعمل — 🏡 الخميس — 💼 متقاعد — 📱 0506733589</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٨٧] عبدالسلام عبدالله بو شعمل — 🏡 الخميس — 💼 موظف — 📱 0541498585</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٨٨] العز بن عبدالسلام عبدالله بو شعمل — 🏡 الخميس — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٨٩] أسامة عبدالله بو شعمل — 🏡 الخميس — 💼 معلم — 📱 0556033191</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٩٠] محمد ظافر بو شعمل — 🏡 المدانة — 💼 متقاعد — 📱 0506739702</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٩١] مهند محمد ظافر بو شعمل — 🏡 المدانة — 💼 طالب جامعي — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٩٢] مؤيد محمد ظافر بو شعمل — 🏡 المدانة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٩٣] سالم ظافر بو شعمل — 🏡 المدانة — 💼 معلم — 📱 0503756391</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٩٤] ظافر سالم ظافر بو شعمل — 🏡 المدانة — 💼 قطاع خاص — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٩٥] عبدالله سالم ظافر بو شعمل — 🏡 المدانة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٩٦] عبدالله ظافر بو شعمل — 🏡 جيزان — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٩٧] أنس عبدالله ظافر بو شعمل — 🏡 جيزان — 💼 طالب جامعي — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٩٨] عبداللطيف ظافر بو شعمل — 🏡 الخميس — 💼 عسكري — 📱 0533428213</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٥٩٩] نايف عبداللطيف ظافر بو شعمل — 🏡 الخميس — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٠٠] راكان عبداللطيف ظافر بو شعمل — 🏡 الخميس — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٠١] عبدالهادي ظافر بو شعمل — 🏡 المدانة — 💼 باحث عن عمل — 📱 0509797782</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٠٢] نادر عبدالهادي ظافر بو شعمل — 🏡 المدانة — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٠٣] عادل عبدالهادي ظافر بو شعمل — 🏡 المدانة — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٠٤] ظافر سالم بو شعمل — 🏡 الخميس — 💼 متقاعد — 📱 0557755218</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٠٥] نواف ظافر سالم بو شعمل — 🏡 الخميس — 💼 خريج ثانوي — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٠٦] حاتم ظافر سالم بو شعمل — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٠٧] حازم ظافر سالم بو شعمل — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٠٨] تميم ظافر سالم بو شعمل — 🏡 الخميس — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٠٩] تركي سالم بو شعمل — 🏡 الخميس — 💼 عسكري — 📱 0531295818</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦١٠] سالم تركي سالم بو شعمل — 🏡 الخميس — 💼 طالب جامعي — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦١١] عبدالرحمن تركي سالم بو شعمل — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦١٢] أحمد تركي سالم بو شعمل — 🏡 الخميس — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦١٣] سلمان تركي سالم بو شعمل — 🏡 الخميس — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦١٤] حسان تركي سالم بو شعمل — 🏡 الخميس — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦١٥] علي سالم بو شعمل — 🏡 الخميس — 💼 معلم — 📱 0500659758</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦١٦] ابراهيم علي سالم بو شعمل — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦١٧] محمد علي سالم بو شعمل — 🏡 الخميس — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦١٨] محمد سالم بو شعمل — 🏡 المدانة — 💼 عسكري — 📱 0505535422</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦١٩] تركي محمد سالم بو شعمل — 🏡 المدانة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٢٠] رعد محمد سالم بو شعمل — 🏡 المدانة — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٢١] مجدي سالم بو شعمل — 🏡 المدانة — 💼 مؤذن — 📱 0534990621</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٢٢] 🔸علي محمد بن سعد (٢) — 🏡 الخميس — 💼 متقاعد — 📱 0553066198</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٢٣] محمد علي محمد بن سعد (٢) — 🏡 الخميس — 💼 معلم — 📱 0551332236</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٢٤] علي محمد علي محمد بن سعد (٢) — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٢٥] ريان محمد علي محمد بن سعد (٢) — 🏡 الخميس — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٢٦] حاتم علي محمد بن سعد (٢) — 🏡 الخميس — 💼 معلم — 📱 0554566272</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٢٧] وسام حاتم علي محمد بن سعد (٢) — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٢٨] علي حاتم علي محمد بن سعد (٢) — 🏡 الخميس — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٢٩] انس حاتم علي محمد بن سعد (٢) — 🏡 الخميس — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٣٠] عبدالله علي محمد بن سعد (٢) — 🏡 الرياض — 💼 عسكري — 📱 0538725253</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٣١] يوسف علي محمد بن سعد (٢) — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٣٢] عبدالله محمد بن سعد (٢) — 🏡 المدانة — 💼 معلم — 📱 0504734302</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٣٣] بدر عبدالله محمد بن سعد (٢) — 🏡 المدانة — 💼 باحث عن عمل — 📱 0554187630</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٣٤] ريان عبدالله محمد بن سعد (٢) — 🏡 المدانة — 💼 طالب مدرسة — 📱 0550257507</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٣٥] رائد عبدالله محمد بن سعد (٢) — 🏡 المدانة — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٣٦] سعيد محمد بن سعد (٢) — 🏡 الرياض — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٣٧] ياسر سعيد محمد بن سعد (٢) — 🏡 الرياض — 💼 طالب مدرسة — 📱 0506739357</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٣٨] انس سعيد محمد بن سعد (٢) — 🏡 الرياض — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٣٩] يوسف محمد بن سعد (٢) — 🏡 الرياض — 💼 معلم — 📱 0555837788</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٤٠] فهد يوسف محمد بن سعد (٢) — 🏡 الرياض — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٤١] فيصل يوسف محمد بن سعد (٢) — 🏡 الرياض — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٤٢] عبدالعزيز يوسف محمد بن سعد (٢) — 🏡 الرياض — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٤٣] عبدالرحمن محمد بن سعد (٢) — 🏡 الخميس — 💼 معلم — 📱 0505235227</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٤٤] وليد محمد بن سعد (٢) — 🏡 المدانة — 💼 باحث عن عمل — 📱 0530517165</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٤٥] حسن محمد بن سعد (٢) — 🏡 المدانة — 💼 عسكري — 📱 0532499935</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٤٦] 🔸خلوفة بن غويل — 🏡 غير محدد — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٤٧] سعد بن غويل — 🏡 غير محدد — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٤٨] فرحان بن غويل — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٤٩] سعود بن غويل — 🏡 الشرقية — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٥٠] محمد بن غويل — 🏡 غير محدد — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٥١] 🔸بندر العبدلي — 🏡 بيشة — 💼 دكتور جامعة — 📱 0502549610</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٥٢] عبدالله بندر العبدلي — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٥٣] جواد بندر العبدلي — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٥٤] 🔸محمد بو عيرى — 🏡 المدانة — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٥٥] غرمان محمد بو عيرى — 🏡 غير محدد — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٥٦] ضيف الله محمد بو عيرى — 🏡 غير محدد — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٥٧] صالح محمد بو عيرى — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٥٨] مغرم بو عيرى — 🏡 المدانة — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='famhead'>👥 اللحمة: آل نايي</div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٥٩] 🔸حامد علي بو زهاب — 🏡 الخميس — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٦٠] عبدالعزيز حامد علي بو زهاب — 🏡 الطايف — 💼 مهندس — 📱 0535478887</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٦١] عبدالله عبدالعزيز حامد بو زهاب — 🏡 الطايف — 💼 طالب جامعي — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٦٢] عمر عبدالعزيز حامد بو زهاب — 🏡 الطايف — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٦٣] علي حامد علي بو زهاب — 🏡 الخميس — 💼 معلم — 📱 0506731334</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٦٤] بدر علي حامد علي بو زهاب — 🏡 الخميس — 💼 طالب جامعي — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٦٥] باسل علي حامد علي بو زهاب — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٦٦] عبدالله حامد علي بو زهاب — 🏡 نجران — 💼 ضابط — 📱 0551295946</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٦٧] نايف عبدالله حامد علي بو زهاب — 🏡 نجران — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٦٨] مهند عبدالله حامد علي بو زهاب — 🏡 نجران — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٦٩] سند عبدالله حامد علي بو زهاب — 🏡 نجران — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٧٠] يحيى حامد علي بو زهاب — 🏡 الخميس — 💼 موظف بالصحة — 📱 0558586940</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٧١] سعود يحيى حامد علي بو زهاب — 🏡 الخميس — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٧٢] مشاري يحيى حامد علي بو زهاب — 🏡 الخميس — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٧٣] راشد يحيى حامد علي بو زهاب — 🏡 الخميس — 💼 طفل — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٧٤] 🔸عبدالله صالح بو عسلة — 🏡 جدة — 💼 عميد متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٧٥] مغرم صالح بو عسلة — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٧٦] عبدالرحمن صالح بو عسلة — 🏡 المجاردة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٧٧] عبدالله محمد صالح بو عسلة — 🏡 المدانة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٧٨] 🔸علي محمد بن حامد — 🏡 الخميس — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٧٩] حامد محمد بن حامد — 🏡 الرياض — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٨٠] مطلق محمد بن حامد — 🏡 المدانة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٨١] صالح محمد بن حامد — 🏡 المدانة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٨٢] عساف محمد بن حامد — 🏡 المدانة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٨٣] 🔸علي بو وقدان — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٨٤] شاكر علي بو وقدان — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٨٥] محمد علي بو وقدان — 🏡 تبوك — 💼 متقاعد — 📱 0559558080</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٨٦] خالد محمد علي بو وقدان — 🏡 تبوك — 💼 طالب جامعي — 📱 0550825728</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٨٧] عبدالله علي بو وقدان — 🏡 الخميس — 💼 متقاعد — 📱 0503732847</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٨٨] علي عبدالله علي بو وقدان — 🏡 الخميس — 💼 دكتور — 📱 0502511778</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٨٩] شاكر عبدالله علي بو وقدان — 🏡 الرياض — 💼 مهندس — 📱 0557855314</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٩٠] محمد عبدالله علي بو وقدان — 🏡 الرياض — 💼 عسكري — 📱 0530160291</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٩١] ظافر علي بو وقدان — 🏡 الخميس — 💼 متقاعد — 📱 0503089128</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٩٢] عبدالله ظافر علي بو وقدان — 🏡 الخميس — 💼 عسكري — 📱 0546485040</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٩٣] فهد ظافر علي بو وقدان — 🏡 الخميس — 💼 طالب مدرسة — 📱 0507329922</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٩٤] عبدالرحمن علي بو وقدان — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٩٥] عبدالعزيز علي بو وقدان — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٩٦] علي عبدالله بو وقدان — 🏡 المدانة — 💼 متقاعد — 📱 0508050523</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٩٧] عبدالله علي عبدالله بو وقدان — 🏡 جدة — 💼 موظف مدني — 📱 0533853693</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٩٨] شاكر علي عبدالله بو وقدان — 🏡 المدانة — 💼 موظف مدني — 📱 0556833462</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٦٩٩] محمد علي عبدالله بو وقدان — 🏡 المجاردة — 💼 معلم — 📱 0536427022</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٠٠] حسام علي عبدالله بو وقدان — 🏡 المدانة — 💼 طالب مدرسة — 📱 0557759150</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٠١] صقر علي عبدالله بو وقدان — 🏡 المدانة — 💼 طالب مدرسة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٠٢] شاكر عبدالله بو وقدان — 🏡 المدانة — 💼 موظف بالتعليم — 📱 0500997878</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٠٣] 🔸قطام جابر بن محمد — 🏡 الخميس — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٠٤] عبدالله جابر بن محمد — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٠٥] محمد حامد جابر بن محمد — 🏡 الرياض — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٠٦] 🔸علي بن جابر — 🏡 الخميس — 💼 ضابط متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٠٧] تركي علي بن جابر — 🏡 الرياض — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٠٨] محمد علي بن جابر — 🏡 غير محدد — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٠٩] يوسف علي بن جابر — 🏡 الرياض — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧١٠] 🔸عبدالله بن حيالله — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧١١] يحيى عبدالله بن حيالله — 🏡 نجران — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧١٢] عبدالله يحيى عبدالله بن حيالله — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧١٣] فرحان عبدالله بن حيالله — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧١٤] عبدالخالق عبدالله بن حيالله — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧١٥] فرحان بن حيالله — 🏡 المدانة — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧١٦] عبدالله فرحان بن حيالله — 🏡 المدانة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧١٧] 🔸فهد سالم بو فهد — 🏡 غير محدد — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧١٨] سالم فهد سالم بو فهد — 🏡 جدة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧١٩] ظافر سالم بو فهد — 🏡 غير محدد — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٢٠] 🔸خالد بن زهبان — 🏡 جدة — 💼 متقاعد — 📱 0555550783</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٢١] عبدالله خالد بن زهبان — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٢٢] حمود خالد بن زهبان — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٢٣] فيصل خالد بن زهبان — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٢٤] وليد خالد بن زهبان — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٢٥] عبدالرحمن خالد بن زهبان — 🏡 جدة — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٢٦] حامد بن زهبان — 🏡 الخميس — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٢٧] سعيد حامد بن زهبان — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٢٨] خالد حامد بن زهبان — 🏡 الخميس — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٢٩] سلطان بن زهبان — 🏡 الخميس — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٣٠] هاشم سلطان بن زهبان — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٣١] غيثان بن زهبان — 🏡 الخميس — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٣٢] طارق غيثان بن زهبان — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٣٣] عبدالرحمن علي بو داهش — 🏡 جدة — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٣٤] محمد علي بو داهش — 🏡 المدانة — 💼 معلم — 📱 0553180770</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٣٥] عبدالله علي بو داهش — 🏡 المدانة — 💼 معلم — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٣٦] 🔸علي بن قطام — 🏡 المدانة — 💼 متقاعد — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٣٧] عوض علي بن قطام — 🏡 غير محدد — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٣٨] طلال علي بن قطام — 🏡 غير محدد — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٣٩] عبدالرزاق علي بن قطام — 🏡 المدانة — 💼 قطاع خاص — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٤٠] عبدالرحمن علي بن قطام — 🏡 غير محدد — 💼 عسكري — 📱 بدون رقم</div></div>
+<div class='person'>  <div class='avatar'>👤</div>  <div class='ptext'>[٧٤١] عبدالله علي بن قطام — 🏡 غير محدد — 💼 غير محددة — 📱 بدون رقم</div></div>
+		      </div>
+		
+		      <div class="footer">✍️ أعد هذا التقرير / سالم يحيى بن يوسف</div>
+		    </div>
+		
+		  </div>
+		
+<script>
+(function () {
+  function normalizeArabic(s) {
+    if (!s) return "";
+    return s
+      .toString()
+      .replace(/[\u064B-\u0652\u0670\u0640]/g, "")  // تشكيل + تطويل
+      .replace(/[إأآا]/g, "ا")
+      .replace(/ى/g, "ي")
+      .replace(/ؤ/g, "و")
+      .replace(/ئ/g, "ي")
+      .replace(/ة/g, "ه")
+      .replace(/\s+/g, " ")
+      .trim()
+      .toLowerCase();
+  }
+
+  function filterNow() {
+    var input = document.getElementById("searchInput");
+    if (!input) return;
+
+    var q = normalizeArabic(input.value);
+    var persons = Array.from(document.querySelectorAll(".person"));
+    var famheads = Array.from(document.querySelectorAll(".famhead"));
+
+    // فلترة الأفراد
+    persons.forEach(function (p) {
+      var text = normalizeArabic(p.textContent || p.innerText || "");
+      p.style.display = (!q || text.indexOf(q) !== -1) ? "" : "none";
+    });
+
+    // إخفاء/إظهار عناوين اللحمة حسب النتائج أسفلها
+    famheads.forEach(function (head) {
+      var next = head.nextElementSibling;
+      var visible = false;
+
+      while (next && !next.classList.contains("famhead")) {
+        if (next.classList.contains("person") && next.style.display !== "none") {
+          visible = true;
+          break;
+        }
+        next = next.nextElementSibling;
+      }
+      head.style.display = visible ? "" : "none";
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var input = document.getElementById("searchInput");
+    var clearBtn = document.getElementById("clearBtn");
+    if (!input) return;
+
+    input.addEventListener("input", filterNow);
+
+    if (clearBtn) {
+      clearBtn.addEventListener("click", function () {
+        input.value = "";
+        filterNow();
+        input.focus();
+      });
+    }
+  });
+})();
+</script>
+
+</body>
+		</html>
